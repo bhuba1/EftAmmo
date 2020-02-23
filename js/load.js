@@ -13,7 +13,9 @@ function setUp()
 
 	weapons = document.getElementsByTagName('img');
 	for (var i = 0; i < weapons.length; i++) {
-	    //weapons[i].addEventListener('click', showAmmoForWeapon, false);
+	    weapons[i].addEventListener('click', function(){
+	    	event.srcElement.parentElement.getElementsByTagName('div')[0].style.display = 'none';
+	    }, false);
 	    weapons[i].style.cursor = "pointer"
 	}
 
