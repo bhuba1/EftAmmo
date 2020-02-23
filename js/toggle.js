@@ -4,7 +4,9 @@ var show = function (elem) {
 	// Get the natural height of the element
 	var getHeight = function () {
 		elem.style.display = 'block'; // Make it visible
-		var height = elem.scrollHeight + 'px'; // Get it's height
+		//var height = elem.scrollHeight + 'px'; // Get it's height
+		var height = '200px';
+		console.log('height: ' + height)
 		elem.style.display = ''; //  Hide it again
 		return height;
 	};
@@ -54,7 +56,9 @@ var toggle = function (elem, timing) {
 
 // Listen for click events
 document.addEventListener('click', function (event) {
-
+	console.log('TOGGLE: ');
+	console.log(event.target);
+	console.log(event.target.classList.contains('toggle'));
 	// Make sure clicked element is our toggle
 	if (!event.target.classList.contains('toggle')) return;
 
@@ -62,7 +66,9 @@ document.addEventListener('click', function (event) {
 	event.preventDefault();
 
 	// Get the content
-	var content = document.querySelector(event.target.hash);
+	var content = event.target.parentElement.getElementsByTagName('div')[0];
+	console.log('Toggle content');
+	console.log(content);
 	if (!content) return;
 
 	// Toggle the content
