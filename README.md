@@ -1,2 +1,2 @@
-# Escape From Tarkov
+# Escape From Tarkov ammo guide
 escape from tarkov ammunition chart
