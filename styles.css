@@ -2,8 +2,11 @@ body
 {
 	color: green;
 	background-color: black;
-	padding: 6px;
-}
+	background: url('pictures/background.jpg');
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size:100% 100%;
+}	
 p
 {
 	display: block;
@@ -20,6 +23,22 @@ th
 table 
 {
 	border: none;
+}
+ul
+{
+	display: inline-block;
+}
+li
+{
+	display: inline-block;
+}
+#content 
+{
+	padding: 6px;
+}
+
+.navbar-nav {
+	display: inline-block;
 }
 .weapon > img {
 	width: 500px; 
