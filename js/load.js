@@ -7,13 +7,13 @@ function setUp()
 {
 	ammos = document.getElementsByClassName('ammo');
 	for (var i = 0; i < ammos.length; i++) {
-	    ammos[i].style.display='none';
-	    ammos[i].style.transitionDuration = "3s";
+	    //ammos[i].style.display='none';
+	    
 	}
 
 	weapons = document.getElementsByTagName('img');
 	for (var i = 0; i < weapons.length; i++) {
-	    weapons[i].addEventListener('click', showAmmoForWeapon, false);
+	    //weapons[i].addEventListener('click', showAmmoForWeapon, false);
 	    weapons[i].style.cursor = "pointer"
 	}
 

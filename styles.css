@@ -48,11 +48,7 @@ li
 .weapon > img {
 	width: 500px; 
 }
-.ammo
-{
-	display: none;
-	transition-duration: 3s;
-}
+
 .weapon 
 {
 	width: 850px;
