@@ -1,0 +1,34 @@
+body 
+{
+	color: green;
+	background-color: black;
+	padding: 6px;
+}
+p
+{
+	display: block;
+}
+td
+{
+	text-align: center;
+	
+}
+th 
+{
+	text-align: center;
+}
+table 
+{
+	border: none;
+}
+.weapon > img {
+	width: 500px; 
+}
+.ammo
+{
+	display: none;
+}
+.weapon 
+{
+	width: 850px;
+}
