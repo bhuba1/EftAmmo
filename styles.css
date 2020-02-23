@@ -1,11 +1,12 @@
 body 
 {
-	color: green;
+	color: #007bff;
 	background-color: black;
 	background: url('pictures/background.jpg');
 	background-repeat: no-repeat;
   	background-attachment: fixed;
   	background-size:100% 100%;
+  	
 }	
 p
 {
