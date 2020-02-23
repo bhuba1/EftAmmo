@@ -8,6 +8,7 @@ function setUp()
 	ammos = document.getElementsByClassName('ammo');
 	for (var i = 0; i < ammos.length; i++) {
 	    ammos[i].style.display='none';
+	    ammos[i].style.transitionDuration = "3s";
 	}
 
 	weapons = document.getElementsByTagName('img');
