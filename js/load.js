@@ -51,7 +51,7 @@ function showAmmoForWeapon(e) {
     if (ammo.style.display == "none") {
         $(ammo).slideDown("fast");
         $([document.documentElement, document.body]).animate({
-        	scrollTop: $(ammo).offset().top - 254
+        	scrollTop: $(ammo).offset().top - 200
     	}, 350);
     } else {
         $(ammo).slideUp("fast");

@@ -102,18 +102,19 @@ nav
 .image 
 {
 	position: relative;
-	height: 180px;
-	width: 498px;
+	height: 120px;
+	width: 300px;
 	margin-bottom: 10px;
 	background-color: rgba(0,0,0,0.8);
 	border-radius: 30px;
+	top: 38px;
 
 }
 .image > img 
 {
 	flex: 1;
-	max-height: 180px;
-	width: 498px;
+	max-height: 120px;
+	width: 300px;
 	border-radius: 30px;
 	position: absolute;
 	margin: auto;
