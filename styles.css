@@ -6,6 +6,7 @@ body
 	background-repeat: no-repeat;
   	background-attachment: fixed;
   	background-size:100% 100%;
+  	padding-top: 50px;
 
 }	
 p
@@ -14,8 +15,14 @@ p
 }
 td
 {
-	text-align: center;
-		
+	text-align: left;
+	line-height: 0.8;
+}
+td:first-child
+{
+	text-align: left;
+	width: 130px;
+	
 }
 th 
 {
@@ -24,6 +31,8 @@ th
 table 
 {
 	border: none;
+	border-collapse: collapse;
+	white-space: nowrap;
 }
 ul
 {
@@ -33,9 +42,51 @@ li
 {
 	display: inline-block;
 }
-.weapon > img 
+nav 
 {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 50px;
+	padding-right: 20px;
+}
+
+.ammo 
+{
+
+	flex-direction: column-reverse;
+}
+.name {
+	display: table;
+	overflow: hidden;
+	width: 180px;
+	height: 174px;
+	margin-right: 10px;
+}
+.name > p 
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+.weapon {
+	display: flex;
+	flex-wrap: wrap;
+	width: 950px;
+}
+.weapon > p 
+{
+	width: 140px;
+	margin-top: 50px;
+	
+}
+.image > img 
+{
+	flex: 1;
+	height: 180px;
+	width: 498px;
 	border-radius: 30px;
+	margin-bottom: 10px;
+	
 }
 #content 
 {
@@ -45,11 +96,4 @@ li
 .navbar-nav {
 	display: inline-block;
 }
-.weapon > img {
-	width: 500px; 
-}
 
-.weapon 
-{
-	width: 850px;
-}

@@ -28,7 +28,7 @@ function setUp() {
 
 function showAmmoForWeapon(e) {
     console.log(event.srcElement);
-    ammo = event.srcElement.parentElement.getElementsByTagName('div')[0];
+    ammo = event.srcElement.parentElement.parentElement.getElementsByClassName('ammo')[0];
     console.log(ammo);
     //ammo.show("show");
     if (ammo.style.display == "none") {
