@@ -6,7 +6,7 @@ function setUp() {
     for (var i = 0; i < ammos.length; i++) {
         ammos[i].style.display = 'none';
     }
-    weapons = document.getElementsByTagName('img');
+    weapons = document.getElementsByClassName('image');
     for (var i = 0; i < weapons.length; i++) {
         $(weapons[i]).click( showAmmoForWeapon);
         weapons[i].style.cursor = "pointer";
@@ -23,6 +23,15 @@ function setUp() {
     a545_39 = document.getElementsByClassName('5.45x39 mm');
     for (var i = 0; i < a545_39.length; i++) {
         a545_39[i].append(createTable(data.filter(x => x.name === '5.45x39 mm')))
+    }
+    a762_51 = document.getElementsByClassName('7.62x51 mm');
+    for (var i = 0; i < a545_39.length; i++) {
+        a762_51[i].append(createTable(data.filter(x => x.name === '7.62x51 mm')))
+    }
+    a12_70 = document.getElementsByClassName('12x70 mm');
+    for (var i = 0; i < a545_39.length; i++) {
+        a12_70[i].append(createTable(data.filter(x => x.name === '12 Gauge Shot')))
+        a12_70[i].append(createTable(data.filter(x => x.name === '12 Gauge Slugs')))
     }
     $('th').css('border:none');
 }
@@ -91,6 +100,12 @@ function createTable(ammos) {
     
     var td1 = document.createElement('th');
     td1.style.borderTop = 'none';
+    td1.appendChild(document.createTextNode('Damage'))
+    tr.appendChild(td1);
+
+
+    var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Pen. Value'))
     tr.appendChild(td1);
     
@@ -141,6 +156,9 @@ function createTable(ammos) {
         tr.appendChild(td1);
         var td1 = document.createElement('td');
         td1.appendChild(document.createTextNode(ammos[i].type));
+        tr.appendChild(td1);
+        var td1 = document.createElement('td');
+        td1.appendChild(document.createTextNode(ammos[i].damage));
         tr.appendChild(td1);
         var td1 = document.createElement('td');
         td1.appendChild(document.createTextNode(ammos[i].pValue));
