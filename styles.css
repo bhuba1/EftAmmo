@@ -24,15 +24,31 @@ td:first-child
 	width: 130px;
 	
 }
+
 th 
 {
 	text-align: center;
+	border:none;
 }
 table 
 {
 	border: none;
-	border-collapse: collapse;
+	border-radius: 15px;
 	white-space: nowrap;
+	border-collapse: separate;
+}
+thead 
+{
+	border:none;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
 }
 ul
 {

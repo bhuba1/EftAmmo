@@ -24,6 +24,7 @@ function setUp() {
     for (var i = 0; i < a545_39.length; i++) {
         a545_39[i].append(createTable(data.filter(x => x.name === '5.45x39 mm')))
     }
+    $('th').css('border:none');
 }
 
 function showAmmoForWeapon(e) {
@@ -75,38 +76,61 @@ function createTable(ammos) {
     tbl.setAttribute('border', '1');
     var tbdy = document.createElement('tbody');
     var thead = document.createElement('thead');
+    
     var tr = document.createElement('tr');
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Name'))
     tr.appendChild(td1);
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Type'))
     tr.appendChild(td1);
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Pen. Value'))
     tr.appendChild(td1);
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Armor Damage'))
     tr.appendChild(td1);
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Frag. chance'))
     tr.appendChild(td1);
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Class 1'))
     tr.appendChild(td1);
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Class 2'))
     tr.appendChild(td1);
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Class 3'))
     tr.appendChild(td1);
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Class 4'))
     tr.appendChild(td1);
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Class 5'))
     tr.appendChild(td1);
+    
     var td1 = document.createElement('th');
+    td1.style.borderTop = 'none';
     td1.appendChild(document.createTextNode('Class 6'))
     tr.appendChild(td1);
     thead.appendChild(tr);
