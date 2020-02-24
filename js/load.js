@@ -38,15 +38,26 @@ function setUp() {
 
 function showAmmoForWeapon(e) {
     console.log(event.srcElement);
-    ammo = event.srcElement.parentElement.parentElement.getElementsByClassName('ammo')[0];
-    console.log(ammo);
+    var ammo = undefined;
+    if(event.srcElement.nodeName == "DIV")
+    {
+    	ammo = event.srcElement.parentElement.getElementsByClassName('ammo')[0];
+    }
+    else {
+    	ammo = event.srcElement.parentElement.parentElement.getElementsByClassName('ammo')[0];
+    }
+   
     //ammo.show("show");
     if (ammo.style.display == "none") {
         $(ammo).slideDown("fast");
+        $([document.documentElement, document.body]).animate({
+        	scrollTop: $(ammo).offset().top - 254
+    	}, 350);
     } else {
         $(ammo).slideUp("fast");
     }
     console.log('Clicked weapon');
+    
 }
 
 function getData() {
