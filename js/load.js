@@ -33,6 +33,10 @@ function setUp() {
         a12_70[i].append(createTable(data.filter(x => x.name === '12 Gauge Shot')))
         a12_70[i].append(createTable(data.filter(x => x.name === '12 Gauge Slugs')))
     }
+    a762_54 = document.getElementsByClassName('7.62x54R');
+    for (var i = 0; i < a545_39.length; i++) {
+        a762_54[i].append(createTable(data.filter(x => x.name === '7.62x54R')))
+    }
     $('th').css('border:none');
 }
 
